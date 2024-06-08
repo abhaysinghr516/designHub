@@ -17,7 +17,7 @@ const CorePrinciples = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-4 md:px-16">
           {principles.map((principle, index) => (
-            <Link href={principle.link}>
+            <Link key={index} href={principle.link}>
               <div
                 key={index}
                 className="p-8 bg-[#f0efea] text-left rounded-xl transform hover:scale-110 transition-transform duration-300"

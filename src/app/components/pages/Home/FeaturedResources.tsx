@@ -30,7 +30,7 @@ const FeaturedResources = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-16">
           {resources.map((resource, index) => (
-            <Link href={resource.link}>
+            <Link key={index} href={resource.link}>
               <div className="bg-[#fafaf8] group rounded-xl p-6 ">
                 <h3 className="text-2xl font-medium mb-2">{resource.title}</h3>
                 <p className="mb-4">{resource.description}</p>
