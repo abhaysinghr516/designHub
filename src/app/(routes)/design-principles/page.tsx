@@ -38,7 +38,7 @@ const DesignPrinciples = () => {
 
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {principles.map((principle) => (
-            <Link href={principle.link}>
+            <Link key={principle.name} href={principle.link}>
               <div
                 key={principle.name}
                 className="p-8 bg-[#f0efea] text-left rounded-xl transform hover:scale-110 transition-transform duration-300"

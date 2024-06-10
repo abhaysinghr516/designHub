@@ -38,7 +38,7 @@ const DesignResources = () => {
 
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {resources.map((resource) => (
-            <Link href={resource.link}>
+            <Link key={resource.name} href={resource.link}>
               <div
                 key={resource.name}
                 className="p-8 bg-[#f0efea] text-left rounded-xl transform hover:scale-110 transition-transform duration-300"
