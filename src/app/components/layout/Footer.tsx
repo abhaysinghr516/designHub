@@ -6,7 +6,9 @@ const Footer = () => {
     <footer className="relative bg-[#030303] text-[#5B5B5B] h-screen py-3">
       <div className="container mx-auto flex justify-between items-center h-full">
         <div className="text-right w-full flex justify-center items-center">
-          <p className="text-[12rem] font-medium">DesignHUB</p>
+          <p className="text-6xl sm:text-8xl md:text-[12rem] font-medium">
+            DesignHUB
+          </p>
         </div>
       </div>
       <div className="bg-[#f8f7f4] text-black py-3 absolute bottom-0 left-0 right-0 w-full">
