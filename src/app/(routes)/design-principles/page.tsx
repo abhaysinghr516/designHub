@@ -4,19 +4,62 @@ import Link from "next/link";
 
 const DesignPrinciples = () => {
   const principles = [
-    { name: "Balance", link: "/design-principles/balance" },
-    { name: "Contrast", link: "/design-principles/contrast" },
-    { name: "Alignment", link: "/design-principles/alignment" },
-    { name: "Repetition", link: "/design-principles/repetition" },
-    { name: "Proximity", link: "/design-principles/proximity" },
-    { name: "Color Theory", link: "/design-principles/color-theory" },
-    { name: "Typography", link: "/design-principles/typography" },
+    {
+      name: "Balance",
+      description:
+        "Distribution of visual weight to create harmony and stability in a design.",
+      link: "/design-principles/balance",
+    },
+    {
+      name: "Contrast",
+      description:
+        "Use of opposing elements to create visual interest and emphasis.",
+      link: "/design-principles/contrast",
+    },
+    {
+      name: "Alignment",
+      description: "Arrangement of elements to create order and organization.",
+      link: "/design-principles/alignment",
+    },
+    {
+      name: "Repetition",
+      description: "Reuse of visual elements to create consistency and unity.",
+      link: "/design-principles/repetition",
+    },
+    {
+      name: "Proximity",
+      description: "Grouping related elements to create visual relationships.",
+      link: "/design-principles/proximity",
+    },
+    {
+      name: "Color Theory",
+      description:
+        "Understanding of color relationships and their impact on design.",
+      link: "/design-principles/color-theory",
+    },
+    {
+      name: "Typography",
+      description:
+        "Art of arranging type to make written language legible and appealing.",
+      link: "/design-principles/typography",
+    },
     {
       name: "Layout and Composition",
+      description:
+        "Arrangement of visual elements to create a cohesive design.",
       link: "/design-principles/layout-composition",
     },
-    { name: "Visual Hierarchy", link: "/design-principles/visual-hierarchy" },
-    { name: "Accessibility", link: "/design-principles/accessibility" },
+    {
+      name: "Visual Hierarchy",
+      description: "Organization of design elements based on importance.",
+      link: "/design-principles/visual-hierarchy",
+    },
+    {
+      name: "Accessibility",
+      description:
+        "Ensuring designs are usable by people with diverse abilities.",
+      link: "/design-principles/accessibility",
+    },
   ];
 
   return (
@@ -41,10 +84,11 @@ const DesignPrinciples = () => {
             <Link key={principle.name} href={principle.link}>
               <div
                 key={principle.name}
-                className="p-8 bg-[#f0efea] text-left rounded-xl transform hover:scale-110 transition-transform duration-300"
+                className="p-8 bg-[#f0efea] text-left rounded-xl"
               >
-                <div className="flex items-center justify-center text-[#3C665E]">
+                <div className="text-[#3C665E]">
                   <h3 className="text-2xl font-semibold">{principle.name}</h3>
+                  <p className="text-gray-600">{principle.description}</p>
                 </div>
               </div>
             </Link>
